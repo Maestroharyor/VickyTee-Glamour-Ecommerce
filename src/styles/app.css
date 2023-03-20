@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+	color: theme('textColor.primary');
+	transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+	color: #9a2b45;
+}
+
+/* Switch dark mode */
+html.dark #toggle_checkbox:checked + label #moon:before,
+html.dark #toggle_checkbox:checked + label {
+	background-color: theme('textColor.gray.500') !important;
+}
+
+/* Swiperjs custom style */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	font-size: 20px !important;
+}
