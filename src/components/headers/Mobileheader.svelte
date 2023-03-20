@@ -99,7 +99,7 @@
 				<Icon icon="material-symbols:close-rounded" />
 			</button>
 		</div>
-		<ul class="flex flex-col divide-y px-2 divide-gray-800">
+		<ul class="flex flex-col divide-y px-2 divide-gray-200 dark:divide-gray-800">
 			{#each mainMenuItems as item}
 				<li>
 					<a href={item.link} class="px-2 py-4  inline-block ">{item.title}</a>
