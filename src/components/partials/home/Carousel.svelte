@@ -23,7 +23,9 @@
 	lazy={true}
 	pagination={{ clickable: true }}
 	scrollbar={{ draggable: true }}
-	on:slideChange={() => console.log('slide change')}
+	on:slideChange={() => {
+		// 
+	}}
 	loop={true}
 >
 	<SwiperSlide><CarouselElement image={Image1} /></SwiperSlide>

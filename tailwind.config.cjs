@@ -10,5 +10,15 @@ module.exports = {
 			}
 		}
 	},
-	plugins: [require('daisyui')]
+	plugins: [require('daisyui')],
+	daisyui: {
+		themes: [
+			{
+				secondary: {
+					...require('daisyui/src/colors/themes')['[data-theme=light]'],
+					primary: '#EB3F67'
+				}
+			}
+		]
+	}
 };
