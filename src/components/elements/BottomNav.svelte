@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="btm-nav lg:hidden  bg-gray-50 dark:bg-secondary border-t border-gray-700 opacity-100 text-gray-600 dark:text-gray-50"
+	class="btm-nav lg:hidden  bg-gray-50 dark:bg-secondary border-t border-gray-700 opacity-100 text-gray-600 dark:text-gray-50 z-30"
 >
 	<button class="text-3xl">
 		<Icon icon="mdi:menu" />
@@ -17,8 +17,8 @@
 		<Icon icon="material-symbols:search" />
 		<span class="btm-nav-label text-sm">Search</span>
 	</button>
-	<button class="text-3xl">
+	<a class="text-3xl text-gray-600" href="/cart">
 		<Icon icon="material-symbols:shopping-bag-outline" />
 		<span class="btm-nav-label text-sm">Cart</span>
-	</button>
+	</a>
 </div>

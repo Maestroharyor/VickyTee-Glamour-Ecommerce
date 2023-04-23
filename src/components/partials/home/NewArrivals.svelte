@@ -27,7 +27,6 @@
 	export let activeTab = 0;
 
 	function setActiveTab(index: number) {
-		console.log(index);
 		activeTab = index;
 	}
 

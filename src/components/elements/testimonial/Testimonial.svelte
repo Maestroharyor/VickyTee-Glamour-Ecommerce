@@ -11,7 +11,7 @@
 </script>
 
 <article
-	class="border-gray/20 relative mx-auto max-w-xs border p-4 shadow-lg lg:grid lg:max-w-3xl lg:grid-flow-row-dense lg:grid-cols-2 lg:place-items-center lg:py-12 lg:pl-0"
+	class="border-gray/20 relative mx-auto max-w-xs border p-4 shadow-lg lg:grid lg:max-w-6xl lg:grid-flow-row-dense lg:grid-cols-2 lg:place-items-center lg:py-12 lg:pl-0"
 >
 	<div class="relative z-10 grid place-items-center px-6 py-7 lg:col-start-2 lg:col-end-2">
 		<img

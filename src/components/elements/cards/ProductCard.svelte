@@ -6,9 +6,9 @@
 </script>
 
 <div
-	class="bg-gray-100 dark:bg-gray-700 rounded-lg m-h-64 p-2 hover:shadow-xl transition duration-300 relative group"
+	class="bg-gray-100 dark:bg-gray-700 rounded-lg m-h-64 p-2 hover:shadow-xl transition duration-300 relative group flex flex-col justify-center items-stretch"
 >
-	<a href={`/product/${product.slug}`}>
+	<a href={`/product/${product.slug}`} class="self-center">
 		<figure class="lg:max-h-64 aspect-square overflow-hidden">
 			<img
 				src={product.images[0].src}
@@ -30,7 +30,7 @@
 			<Icon icon="mdi:magnify" />
 		</button>
 	</div>
-	<a class="rounded-lg p-4 bg-purple-700 flex flex-col" href={`/product/${product.slug}`}>
+	<a class="rounded-lg p-4 bg-primary flex flex-col" href={`/product/${product.slug}`}>
 		<div>
 			<a href={`/product/${product.slug}`}>
 				<h5 class="text-white text-2xl font-bold leading-none">
@@ -39,13 +39,13 @@
 			</a>
 
 			<a href={`/shop?category=${product.categories[0].slug}`}>
-				<span class="text-xs text-gray-400 leading-none">{product.categories[0].name}</span>
+				<span class="text-xs text-pink-50 leading-none">{product.categories[0].name}</span>
 			</a>
 		</div>
 		<div class="flex items-center">
 			<div class="text-lg text-white font-light">₦{product.price}</div>
 			<button
-				class="rounded-full bg-purple-900 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 ml-auto transition duration-300 flex items-center justify-center"
+				class="rounded-full bg-pink-900 text-white hover:bg-white hover:text-pink-900 hover:shadow-xl focus:outline-none w-10 h-10 ml-auto transition duration-300 flex items-center justify-center"
 			>
 				<Icon icon="mdi-cart-outline" />
 			</button>

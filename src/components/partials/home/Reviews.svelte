@@ -94,12 +94,14 @@
 </script>
 
 <svelte:window on:keydown={onKeydown} on:wheel={onScroll} />
-<section class="bg-white py-20">
+<section class="bg-white dark:bg-gray-900 py-20">
 	<div class="mb-10 max-w-[600px] mx-auto text-center">
-		<h2 class="text-4xl font-bold text-gray-700 dark:text-gray-200 mb-1">Trending Collection</h2>
-		<p class="text-xl">Check out most promising product bought by our buyers</p>
+		<h2 class="text-4xl font-bold text-gray-700 dark:text-gray-200 mb-1">Reviews</h2>
+		<p class="text-xl">This is what our customers have to say</p>
 	</div>
-	<div class="grid min-h-[500px] grid-rows-[auto_1fr] place-items-center overflow-x-hidden ">
+	<div
+		class="grid min-h-[700px] lg:min-h-[500px] grid-rows-[auto_1fr] place-items-center overflow-x-hidden "
+	>
 		<ul class="relative h-full w-full">
 			{#each testimonials as item (item.id)}
 				{@const position = item.position}

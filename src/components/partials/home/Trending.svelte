@@ -17,4 +17,7 @@
 			{/each}
 		</div>
 	</div>
+	<div class="flex justify-center pt-10">
+		<a class="btn btn-secondary rounded-full px-10 hover:text-white" href="/shop">Check out more</a>
+	</div>
 </section>

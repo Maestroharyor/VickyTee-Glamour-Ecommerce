@@ -1,4 +1,6 @@
-export const productList = [
+import type { Product } from '../types/woocommerce';
+
+export const productList: Product[] = [
 	{
 		id: 1,
 		name: 'Blue T-Shirt',
@@ -393,6 +395,7 @@ export const productList = [
 		price: '29.99',
 		regular_price: '39.99',
 		sale_price: '29.99',
+		stock_quantity: 20,
 		categories: [
 			{
 				id: 4,
@@ -407,10 +410,9 @@ export const productList = [
 				name: "Kids' Backpack"
 			}
 		],
-		rating: {
-			average: '4.5',
-			count: 10
-		},
+
+		rating_count: 4,
+		average_rating: '3.5',
 		reviews: [
 			{
 				id: 1,
@@ -445,6 +447,104 @@ export const productList = [
 				id: 2,
 				name: 'Material',
 				option: 'Nylon'
+			}
+		],
+		meta_data: [
+			{
+				id: 15,
+				key: 'color',
+				value: 'pink'
+			},
+			{
+				id: 16,
+				key: 'material'
+			}
+		]
+	},
+	{
+		id: 11,
+		name: 'Blue T-Shirt',
+		slug: 'blue-t-shirt',
+		description: 'This comfortable and stylish blue t-shirt is perfect for any casual occasion.',
+		price: '19.99',
+		regular_price: '29.99',
+		sale_price: '19.99',
+		stock_quantity: 20,
+		categories: [
+			{
+				id: 1,
+				name: "Men's Clothing",
+				slug: 'mens-clothing'
+			},
+			{
+				id: 4,
+				name: 'T-Shirts',
+				slug: 't-shirts'
+			}
+		],
+		images: [
+			{
+				id: 1,
+				src: 'https://images.pexels.com/photos/11690209/pexels-photo-11690209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+				alt: 'Blue T-Shirt'
+			}
+		],
+		rating_count: 4,
+		average_rating: '3.5',
+		meta_data: [
+			{
+				id: 1,
+				key: 'color',
+				value: 'blue'
+			},
+			{
+				id: 2,
+				key: 'material',
+				value: 'cotton'
+			}
+		]
+	},
+	{
+		id: 12,
+		name: 'Black Leather Jacket',
+		slug: 'black-leather-jacket',
+		description:
+			'Stay warm and stylish with our premium quality leather jacket. Made with 100% genuine leather, this jacket is perfect for any occasion.',
+		price: '199.99',
+		regular_price: '249.99',
+		sale_price: '',
+		stock_quantity: 10,
+		categories: [
+			{
+				id: 1,
+				name: "Men's Clothing",
+				slug: 'mens-clothing'
+			},
+			{
+				id: 5,
+				name: 'Jackets',
+				slug: 'jackets'
+			}
+		],
+		images: [
+			{
+				id: 2,
+				src: 'https://images.pexels.com/photos/14706570/pexels-photo-14706570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+				alt: 'Black Leather Jacket'
+			}
+		],
+		rating_count: 12,
+		average_rating: '4.5',
+		meta_data: [
+			{
+				id: 3,
+				key: 'color',
+				value: 'black'
+			},
+			{
+				id: 4,
+				key: 'material',
+				value: 'leather'
 			}
 		]
 	}
