@@ -30,7 +30,7 @@
 	};
 </script>
 
-<div class="navbar flex lg:hidden bg-gray-50 dark:bg-secondary shadow-lg sticky top-0 z-20 ">
+<div class="navbar flex lg:hidden bg-gray-50 dark:bg-secondary shadow-lg sticky top-0 z-[40] ">
 	<div class="navbar-start">
 		<div class="dropdown">
 			<div class="btn btn-ghost btn-circle" on:click={openMenu} on:keydown={openMenu}>

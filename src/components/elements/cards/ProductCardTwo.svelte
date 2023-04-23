@@ -5,13 +5,13 @@
 <div
 	class="bg-white dark:bg-gray-800 shadow-md hover:scale-105 hover:shadow-xl duration-500 rounded-xl overflow-hidden relative"
 >
-	<a href="https://">
+	<figure class="lg:max-h-64 aspect-square overflow-hidden">
 		<img
 			src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTgzODM0NDU&ixlib=rb-1.2.1&q=80"
-			alt="Product"
-			class="h-80 w-72 object-cover"
+			alt=""
+			class="h-full ml-auto mr-auto object-cover group-hover:scale-150 transition-all duration-300 ease-in-out"
 		/>
-	</a>
+	</figure>
 	<div class="absolute top-0 right-0 flex flex-col gap-3 items-center p-4 z-10">
 		<button
 			class="rounded-full bg-pink-900 text-white hover:bg-white hover:text-pink-900 hover:shadow-xl focus:outline-none w-10 h-10 ml-auto transition duration-300 flex items-center justify-center"
@@ -35,7 +35,7 @@
 				<p class="text-sm text-gray-600  dark:text-gray-100 cursor-auto ml-2">$199</p>
 			</del>
 			<button
-				class="rounded-full bg-pink-500 text-white hover:bg-gray-700 hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 ml-auto transition duration-300 flex items-center justify-center"
+				class="rounded-full bg-pink-500 text-white hover:bg-gray-700 hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 ml-auto transition duration-300 flex items-center justify-center absolute bottom-4 right-4"
 			>
 				<a href="#">
 					<svg

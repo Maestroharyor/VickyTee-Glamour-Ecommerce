@@ -1,5 +1,5 @@
 <script>
-	import CarouselElement from './CarouselElement.svelte';
+	import CarouselElement from '../../elements/carousel/CarouselElement.svelte';
 	import Image1 from '../../../assets/images/banners/banner1.jpg';
 	import Image2 from '../../../assets/images/banners/banner2.jpg';
 	import Image3 from '../../../assets/images/banners/banner3.png';
@@ -24,7 +24,7 @@
 	pagination={{ clickable: true }}
 	scrollbar={{ draggable: true }}
 	on:slideChange={() => {
-		// 
+		//
 	}}
 	loop={true}
 >
