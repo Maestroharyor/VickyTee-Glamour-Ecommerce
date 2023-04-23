@@ -1,10 +1,10 @@
 import type { MenuType } from '../types/menu';
 
 export const mainMenuItems: MenuType[] = [
-	{ title: 'Hair and Wigs', link: '/category/hair-and-wigs' },
-	{ title: 'Natural Hair Products', link: '/category/natural-hair-products' },
-	{ title: 'Clothings', link: '/category/clothings' },
-	{ title: 'Accessories', link: '/category/accessories' }
+	{ title: 'Hair and Wigs', link: '/shop?category=hair-and-wigs' },
+	{ title: 'Natural Hair Products', link: '/shop?category=natural-hair-products' },
+	{ title: 'Clothings', link: '/shop?category=clothings' },
+	{ title: 'Accessories', link: '/shop?category=accessories' }
 ];
 
 export const storeMenu: MenuType[] = [

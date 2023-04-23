@@ -1,6 +1,6 @@
 <script lang="ts">
 	// import Swiper core and required modules
-	import { Navigation, Pagination, A11y, Autoplay, Lazy, Thumbs } from 'swiper';
+	import { Navigation, Pagination, A11y, Autoplay, Lazy } from 'swiper';
 
 	import { Swiper, SwiperSlide } from 'swiper/svelte';
 
@@ -31,7 +31,7 @@
 		activeTab = index;
 	}
 
-	console.log(productList.map((product) => product.name));
+	let products = productList.slice(0, 6);
 </script>
 
 <section class="py-24 px-5 bg-white dark:bg-transparent">
@@ -83,10 +83,9 @@
 					}}
 					loop={true}
 				>
-					<SwiperSlide><ProductCard /></SwiperSlide>
-					<SwiperSlide><ProductCard /></SwiperSlide>
-					<SwiperSlide><ProductCard /></SwiperSlide>
-					<SwiperSlide><ProductCard /></SwiperSlide>
+					{#each products as product}
+						<SwiperSlide><ProductCard {product} /></SwiperSlide>
+					{/each}
 				</Swiper>
 			</div>
 		</div>
