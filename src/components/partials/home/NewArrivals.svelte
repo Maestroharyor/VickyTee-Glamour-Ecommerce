@@ -1,5 +1,5 @@
 <script lang="ts">
-    	// import Swiper core and required modules
+	// import Swiper core and required modules
 	import { Navigation, Pagination, A11y, Autoplay, Lazy, Thumbs } from 'swiper';
 
 	import { Swiper, SwiperSlide } from 'swiper/svelte';
@@ -10,6 +10,7 @@
 	import 'swiper/css/pagination';
 	import 'swiper/css/autoplay';
 	import ProductCard from '../../elements/cards/ProductCard.svelte';
+	import { productList } from '../../../data/products';
 
 	// your script goes here
 	interface Tab {
@@ -30,11 +31,11 @@
 		activeTab = index;
 	}
 
-	console.log(tabs[activeTab]);
+	console.log(productList.map((product) => product.name));
 </script>
 
-<section class="py-24 px-5">
-	<div class="max-w-[800px] mx-auto text-center">
+<section class="py-24 px-5 bg-white dark:bg-transparent">
+	<div class="max-w-[1200px] mx-auto text-center">
 		<div class="mb-4">
 			<h2 class="text-4xl font-bold text-gray-700 dark:text-gray-200 mb-1">New Arrivals</h2>
 			<p class="text-xl">Check out the latest products for you...</p>
@@ -52,13 +53,42 @@
 					{/each}
 				</div>
 			</div>
-            
-			<!-- <div>
-				<ProductCard />
-				<ProductCard />
-				<ProductCard />
-				<ProductCard />
-			</div> -->
+
+			<div class="pt-10">
+				<Swiper
+					modules={[Navigation, Pagination, Autoplay, A11y, Lazy]}
+					navigation
+					lazy={true}
+					slidesPerView={1}
+					breakpoints={{
+						// when window width is >= 320px
+						640: {
+							slidesPerView: 2,
+							spaceBetween: 30
+						},
+						// when window width is >= 480px
+						768: {
+							slidesPerView: 3,
+							spaceBetween: 30
+						},
+						// when window width is >= 640px
+						1024: {
+							slidesPerView: 4,
+							spaceBetween: 40
+						}
+					}}
+					spaceBetween={30}
+					on:slideChange={() => {
+						//
+					}}
+					loop={true}
+				>
+					<SwiperSlide><ProductCard /></SwiperSlide>
+					<SwiperSlide><ProductCard /></SwiperSlide>
+					<SwiperSlide><ProductCard /></SwiperSlide>
+					<SwiperSlide><ProductCard /></SwiperSlide>
+				</Swiper>
+			</div>
 		</div>
 	</div>
 </section>
