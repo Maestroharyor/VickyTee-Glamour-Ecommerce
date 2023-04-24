@@ -1,7 +1,7 @@
 <section class=" text-gray-800 text-center py-20">
 	<div class="flex flex-wrap justify-center">
 		<div class="grow-0 shrink-0 flex-basis w-full lg:w-6/12 px-3">
-			<div class="p-4 text-3xl bg-blue-600 rounded-full shadow-lg inline-block mb-4">
+			<div class="p-4 text-3xl bg-pink-600 rounded-full shadow-lg inline-block mb-4">
 				<svg
 					aria-hidden="true"
 					focusable="false"
@@ -19,24 +19,26 @@
 				</svg>
 			</div>
 
-			<h2 class="text-3xl font-bold mb-2">Subscibe Newsletter</h2>
+			<h2 class="text-3xl font-bold mb-2 dark:text-gray-50">Subscibe Newsletter</h2>
 
-			<p class="text-gray-500 mb-12">Subscribe to our email and get updates right in your inbox</p>
+			<p class="text-gray-500 dark:text-gray-50 mb-12">
+				Subscribe to our email and get updates right in your inbox
+			</p>
 
 			<div class="md:flex flex-col md:flex-row">
 				<input
 					type="text"
-					class="form-control block w-full px-4 py-2 mb-2 md:mb-0 md:mr-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+					class="form-control block w-full px-4 py-2 mb-2 md:mb-0 md:mr-2 text-xl font-normal text-gray-700 bg-white dark:bg-gray-700 bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-pink-600 focus:outline-none"
 					placeholder="Name"
 				/>
 				<input
 					type="text"
-					class="form-control block w-full px-4 py-2 mb-2 md:mb-0 md:mr-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+					class="form-control block w-full px-4 py-2 mb-2 md:mb-0 md:mr-2 text-xl font-normal text-gray-700 bg-white dark:bg-gray-700 bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-pink-600 focus:outline-none"
 					placeholder="Enter your email"
 				/>
 				<button
 					type="submit"
-					class="inline-block px-7 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+					class="inline-block px-7 py-3 bg-pink-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-pink-700 hover:shadow-lg focus:bg-pink-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-pink-800 active:shadow-lg transition duration-150 ease-in-out"
 					data-mdb-ripple="true"
 					data-mdb-ripple-color="light"
 				>

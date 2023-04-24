@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Icon from '@iconify/svelte';
 	import { fade } from 'svelte/transition';
 
 	export let images: string[] = [];
@@ -46,24 +47,48 @@
 	<div
 		class="fixed z-50 inset-0 bg-black bg-opacity-50 flex items-center justify-center"
 		on:click|self={close}
+		on:keypress|self={close}
 		transition:fade={{ duration: 300 }}
 	>
 		<!-- Modal content with fade transition -->
-		<div class="bg-white p-4 rounded-lg relative" transition:fade={{ duration: 300, delay: 100 }}>
-			<button
-				class="absolute left-0 top-1/2 transform -translate-y-1/2"
-				on:click|stopPropagation={prev}
-			>
-				&lt;
-			</button>
-			<button
-				class="absolute right-0 top-1/2 transform -translate-y-1/2"
-				on:click|stopPropagation={next}
-			>
-				&gt;
-			</button>
-			<img src={images[activeIndex]} {alt} class="w-full" on:click|stopPropagation />
-			<button class="absolute top-0 right-0 m-2" on:click={close}> &times; </button>
+		<div
+			class="bg-white p-4 rounded-lg relative max-w-[900px] w-full flex flex-col"
+			transition:fade={{ duration: 300, delay: 100 }}
+		>
+			<button class="self-end border px-3 py-1 mb-2" on:click={close}>Close &times; </button>
+			<div class="flex gap-3 items-center">
+				<button
+					class="flex items-center justify-center w-[40px] h-[40px] text-4xl font-black bg-gray-200 rounded-full shadow-lg"
+					on:click|stopPropagation={prev}
+				>
+					<Icon icon="mdi:chevron-left" />
+				</button>
+
+				<img
+					src={images[activeIndex]}
+					{alt}
+					class="w-full flex-1 h-[400px] object-cover"
+					on:click|stopPropagation
+					on:keypress|stopPropagation
+					in:fade={{ duration: 300 }}
+					out:fade={{ duration: 300 }}
+				/>
+				<button
+					class="flex items-center justify-center w-[40px] h-[40px] text-4xl font-black bg-gray-200 rounded-full shadow-lg"
+					on:click|stopPropagation={next}><Icon icon="mdi:chevron-right" /></button
+				>
+			</div>
+			<div class={`grid grid-cols-${images.length} gap-4 mt-4 max-w-[500px] mx-auto`}>
+				{#each images as image, index}
+					<img
+						src={image}
+						alt="product"
+						class="w-full h-32 cursor-pointer"
+						on:click={() => (activeIndex = index)}
+						on:keypress={() => (activeIndex = index)}
+					/>
+				{/each}
+			</div>
 		</div>
 	</div>
 {/if}
@@ -74,4 +99,5 @@
 	{alt}
 	class="w-full cursor-pointer"
 	on:click={() => (showModal = true)}
+	on:keypress={() => (showModal = true)}
 />

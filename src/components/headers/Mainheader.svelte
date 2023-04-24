@@ -68,7 +68,7 @@
 				<span class="pl-1 text-gray-500 text-md">0</span>
 			</a>
 			<button
-				class="text-gray-800 hover:text-primary dark:text-gray-100 dark:hover:text-primary transition-all duration-300 ease-in-out text-2xl"
+				class="flex h-10 items-center px-2 rounded-lg border border-gray-200 hover:border-gray-300 focus:outline-none hover:shadow-inner text-2xl"
 			>
 				<Icon icon="mdi:account" />
 			</button>

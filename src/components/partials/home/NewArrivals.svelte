@@ -59,6 +59,7 @@
 					navigation
 					lazy={true}
 					slidesPerView={1}
+					class={'products_slider'}
 					breakpoints={{
 						// when window width is >= 320px
 						640: {

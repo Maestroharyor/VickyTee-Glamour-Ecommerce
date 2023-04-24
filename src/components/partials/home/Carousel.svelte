@@ -2,7 +2,7 @@
 	import CarouselElement from '../../elements/carousel/CarouselElement.svelte';
 	import Image1 from '../../../assets/images/banners/banner1.jpg';
 	import Image2 from '../../../assets/images/banners/banner2.jpg';
-	import Image3 from '../../../assets/images/banners/banner3.png';
+	import Image3 from '../../../assets/images/banners/banner3.jpg';
 
 	// import Swiper core and required modules
 	import { Navigation, Pagination, A11y, Autoplay, Lazy } from 'swiper';
@@ -23,12 +23,20 @@
 	lazy={true}
 	pagination={{ clickable: true }}
 	scrollbar={{ draggable: true }}
+	class={'home_carousel_slider'}
 	on:slideChange={() => {
 		//
 	}}
 	loop={true}
 >
-	<SwiperSlide><CarouselElement image={Image1} /></SwiperSlide>
-	<SwiperSlide><CarouselElement image={Image2} /></SwiperSlide>
-	<SwiperSlide><CarouselElement image={Image3} /></SwiperSlide>
+	<SwiperSlide><CarouselElement image={Image1} title={'Get Your Shine On!!!'} /></SwiperSlide>
+	<SwiperSlide
+		><CarouselElement image={Image2} title={'Most Affordable Fashion Products'} /></SwiperSlide
+	>
+	<SwiperSlide
+		><CarouselElement
+			image={Image3}
+			title={'Get Ready to Be Classy without Spending Much'}
+		/></SwiperSlide
+	>
 </Swiper>

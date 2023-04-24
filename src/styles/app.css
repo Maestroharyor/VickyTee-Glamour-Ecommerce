@@ -20,5 +20,9 @@ html.dark #toggle_checkbox:checked + label {
 /* Swiperjs custom style */
 .swiper-button-next::after,
 .swiper-button-prev::after {
-	font-size: 20px !important;
+	background-color: #9a2b45;
+	padding: 20px;
+	font-size: 15px !important;
+	color: #fff;
+	font-weight: bolder;
 }

@@ -1,3 +1,4 @@
+<!-- layout.svelte -->
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Footer from '../components/footers/Footer.svelte';
@@ -29,6 +30,10 @@
 	onMount(() => {
 		changeThemeOnLoad();
 	});
+
+	export let title = '';
+	export let description = '';
+	export let imageUrl = '';
 </script>
 
 <Mainheader />

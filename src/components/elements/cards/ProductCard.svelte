@@ -24,11 +24,11 @@
 		>
 			<Icon icon="mdi-heart-outline" />
 		</button>
-		<button
+		<!-- <button
 			class="rounded-full bg-gray-900 text-white hover:bg-white hover:text-gray-900 hover:shadow-xl focus:outline-none w-10 h-10 ml-auto transition duration-300 flex items-center justify-center"
 		>
 			<Icon icon="mdi:magnify" />
-		</button>
+		</button> -->
 	</div>
 	<a class="rounded-lg p-4 bg-primary flex flex-col" href={`/product/${product.slug}`}>
 		<div>

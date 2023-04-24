@@ -17,7 +17,7 @@
 		<Icon icon="material-symbols:search" />
 		<span class="btm-nav-label text-sm">Search</span>
 	</button>
-	<a class="text-3xl text-gray-600" href="/cart">
+	<a class="text-3xl text-gray-600 dark:text-white" href="/cart">
 		<Icon icon="material-symbols:shopping-bag-outline" />
 		<span class="btm-nav-label text-sm">Cart</span>
 	</a>

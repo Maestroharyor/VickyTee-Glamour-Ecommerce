@@ -9,28 +9,28 @@
 		{
 			id: crypto.randomUUID(),
 			image: tanyaImg,
-			name: 'Tanya Sinclair',
-			job: 'UX Engineer',
+			name: 'Bisi Adekunle',
+			job: 'Online Store Owner',
 			message:
-				'“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”',
+				'I had a great experience working with this ecommerce platform. It has all the features I need to manage my inventory and orders, and the customer support team is always available to assist me with any issues I encounter. I highly recommend this platform to other online store owners.',
 			position: 'current'
 		},
 		{
 			id: crypto.randomUUID(),
 			image: johnImg,
-			name: 'John Tarkpor',
-			job: 'Junior Front-end Developer',
+			name: 'Chinedu Eze',
+			job: 'Marketing Manager',
 			message:
-				'“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”',
+				'This ecommerce platform has helped our company increase sales and improve customer engagement. The user interface is easy to navigate and the analytics tools have given us valuable insights into our customers’ behaviors. The platform’s integrations with other marketing tools have also been a huge plus for us.',
 			position: 'next'
 		},
 		{
 			id: crypto.randomUUID(),
 			image: bobImg,
-			name: 'Bob Smith',
-			job: 'Web Developer',
+			name: 'Abdullahi Ibrahim',
+			job: 'Fashion Designer',
 			message:
-				'“ My advice to future bootcampers is that if you love analyzing data and problem solving, then you are in the right track. Since it takes determination to reach your dream to become a web developer ”',
+				'I’ve been using this ecommerce platform to sell my clothing designs for over a year now and I have to say it has been a great experience. The platform is user-friendly and the payment system is secure. The customizable design options also make it easy for me to showcase my brand’s unique style.',
 			position: 'prev'
 		}
 	];
